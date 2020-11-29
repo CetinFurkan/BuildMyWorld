@@ -1,6 +1,6 @@
 
 ![alt text](myFirstRosWorld.png)
-# RoboND-myrobot
+# Build My Robot
 The **Build My Robot** project is the first project that comes in **Gazebo World** lesson in Robotics Software Engineer Nanodegree Program. The purpose is to learn how to build a world with custom designed models and pre installed models in Gazebo. This project also has a plugin that welcomes at the begining of the simulation execution.
 
 ### Directory Structure
