@@ -1,7 +1,7 @@
 
-
+![alt text](myFirstRosWorld.png)
 # RoboND-myrobot
-The **myrobot** lab part of RoboND Gazebo Basics lesson. The purpose of this lab is to learn how to build a two-wheeled robot model with the Model Editor tool in Gazebo. Include this model in an empty Gazebo World. And, finally write a plugin to interact with this world.  
+The **Build My Robot** project is the first project that comes in **Gazebo World** lesson in Robotics Software Engineer Nanodegree Program. The purpose is to learn how to build a world with custom designed models and pre installed models in Gazebo. This project also has a plugin that welcomes at the begining of the simulation execution.
 
 ### Directory Structure
 ```
@@ -23,19 +23,19 @@ The **myrobot** lab part of RoboND Gazebo Basics lesson. The purpose of this lab
 
 ### Steps to launch the simulation
 
-#### Step 1 | Update and upgrade the Workspace image
+#### Step 1 | Update and upgrade the workspace
 ```sh
 $ sudo apt-get update && sudo apt-get upgrade -y
 ```
-#### Step 2 | Clone the lab folder in /home/workspace/
+#### Step 2 | Clone the project
 ```sh
 $ cd /home/workspace/
-$ git clone https://github.com/udacity/RoboND-myrobot myrobot
+$ git clone https://github.com/CetinFurkan/BuildMyWorld
 ```
 
 #### Step 3 | Compile the code
 ```sh
-$ cd /home/workspace/myrobot/
+$ cd /home/workspace/BuildMyWorld/
 $ mkdir build
 $ cd build/
 $ cmake ../
@@ -44,15 +44,11 @@ $ make
 
 #### Step 4 | Add the library path to the Gazebo plugin path  
 ```sh
-$ export GAZEBO_PLUGIN_PATH=${GAZEBO_PLUGIN_PATH}:/home/workspace/myrobot/build
+$ export GAZEBO_PLUGIN_PATH=${GAZEBO_PLUGIN_PATH}:/home/workspace/BuildMyWorld/build
 ```
 
 #### Step 5 | Run the Gazebo World file  
 ```sh
-$ cd /home/workspace/myrobot/world/
-$ gazebo myworld
+$ cd /home/workspace/BuildMyWorld/world/
+$ gazebo myFirstRosWorld
 ```
-
-### Output
-The hello world message and the two-wheeled robot inside a Gazebo World should both launch as follow: 
-![alt text](myFirstRosWorld.png)
